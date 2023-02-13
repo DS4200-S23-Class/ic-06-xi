@@ -1,14 +1,68 @@
-<!DOCTYPE html>
-<html> 
+<!DOCTYPE html> 
+<html>
 
+<!-- Meta data / set up -->
 <head>
-    <meta charset=utf-8/>
+    
+    <!-- style -->
+    <link rel="stylesheet" herf="style.css"/>
+
+    <!-- add title -->
+    <title>ic-06</title>
 </head>
 
-
+<!-- structure webpage -->
 <body>
 
+<h1>JavaScript Part 2</h1>
 
+<div> 
+
+    <!-- getting input from user -->
+    <div class="gen"> 
+
+    <p> Choose your favourite vis </p>
+
+    <form id='frm-faveVis'>
+
+        <input type="radio" name='fave_vis' value='Bar Chart'/> Bar Chart
+        <br>
+        <input type='radio' name='fave_vis' value='Line Chart'/> Line Chart
+
+    </form>
+    <button type='button' id='subButton'>Submit</button>
+
+    </div>
+
+    <div class="gen" id="selected-vis">
+        Filler
+    </div>
+
+    <div>
+
+        <svg id='frame'>
+
+            <circle cx="100" cy="100" r="10"/>
+            <text x="100" y="100">(100, 100)</text>
+
+            <circle id='max' cx="400" cy="400" r="10"/>
+            <text x="400" y="400">(400, 400)</text>
+
+        </svg>
+
+        <br>
+        <br>
+        <button type='button' id='subButton2'> Orange Max </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- link js file-->
+<script src="main.js"> </script>
+        
 </body>
 
 </html>
